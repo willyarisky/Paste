@@ -10,7 +10,14 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "@nuxtjs/dotenv": "^1.4.2",
     "nuxt": "^3.12.4",
     "vue": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7"
   }
 }
