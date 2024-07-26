@@ -1,0 +1,59 @@
+@import url(https://fonts.bunny.net/css?family=ibm-plex-mono:300,400);
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: #272822;
+    margin: 0;
+}
+
+#editor {
+    width: 100%;
+    height: calc(100vh - 35px);
+    color: #fff;
+    outline: none;
+    border: none;
+    margin-top: 35px;
+}
+
+.toolbar {
+    display: flex;
+    background: #2f3129;
+    border-bottom: solid 1px #202020;
+    padding: 3px 4px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+
+    .left, .right {
+        display: flex;
+        gap: 4px;
+    }
+
+    .right {
+        padding-right: 8px;
+    }
+
+    button, .btn {
+        background: transparent;
+        text-decoration: underline;
+        color: #fff;
+        border: none;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 400;
+        font-size: 14px;
+        cursor: pointer;
+        padding: 4px 6px;
+
+        &.p-0 {
+            padding: 0;
+        }
+
+        &:hover {
+            color: #b4d273;
+            text-decoration: none;
+        }
+    }
+}

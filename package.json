@@ -12,11 +12,11 @@
   "dependencies": {
     "@notionhq/client": "^2.2.15",
     "@nuxtjs/dotenv": "^1.4.2",
+    "ace-builds": "^1.35.4",
     "nuxt": "^3.12.4",
+    "sass": "^1.77.8",
+    "sass-loader": "^15.0.0",
+    "uuid": "^10.0.0",
     "vue": "latest"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.40"
   }
 }
