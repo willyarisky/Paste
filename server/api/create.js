@@ -1,6 +1,7 @@
 import { Client } from "@notionhq/client";
 import { readBody } from 'h3';
-import { v4 as uuidv4 } from 'uuid';  // Add this line to import uuid
+import { v4 as uuidv4 } from 'uuid';
+import { nanoid } from 'nanoid';
 
 export default defineEventHandler(async (event) => {
   if (!process.env.NOTION_SECRET_KEY || !process.env.NOTION_DATABASE_ID) {
@@ -20,7 +21,7 @@ export default defineEventHandler(async (event) => {
       const contentChunks = splitContent(processedContent, 2000);
       const richTextChunks = splitIntoRichTextChunks(contentChunks, 100);
 
-      const groupId = uuidv4();  // Generate a unique identifier for the group
+      const groupId = nanoid(12);
 
       for (const richTextChunk of richTextChunks) {
         const response = await notion.pages.create({
