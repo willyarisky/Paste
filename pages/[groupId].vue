@@ -38,6 +38,7 @@ onMounted(async () => {
     
     const content = response.body.content.replace(/<<N>>/g, '\n');
     editor.value.setValue(content);
+    editor.value.setReadOnly(true);
   } catch (error) {
     console.error('Error fetching data:', error);
   }
