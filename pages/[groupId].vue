@@ -6,7 +6,7 @@
       </div>
 
       <div class="right">
-        <a href="#" class="btn p-0">
+        <a href="https://github.com/willyarisky/paste" target="_blank" alt="Open Source Pastebin" class="btn p-0">
           <GithubLogo/>
         </a>
       </div>
