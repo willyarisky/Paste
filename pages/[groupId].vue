@@ -43,6 +43,7 @@ onMounted(() => {
   editor.value.session.setMode('ace/mode/javascript');
   editor.value.setTheme('ace/theme/monokai');
   editor.value.session.setUseWrapMode(true);
+  editor.value.setShowPrintMargin(false);
 
   if (error.value || !data.value || !data.value.body || !data.value.body.content) {
     console.error('Error fetching data:', error.value);

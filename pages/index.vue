@@ -37,6 +37,7 @@ onMounted(() => {
   editor.value.session.setMode('ace/mode/javascript');
   editor.value.setTheme('ace/theme/monokai');
   editor.value.session.setUseWrapMode(true);
+  editor.value.setShowPrintMargin(false);
 
   isMac.value = navigator.userAgent.indexOf('Macintosh') >= 0 || navigator.userAgent.indexOf('Mac OS X') >= 0;
 
