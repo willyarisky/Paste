@@ -6,16 +6,24 @@
       </div>
 
       <div class="right">
-        <a href="https://github.com/willyarisky/paste" target="_blank" alt="Open Source Pastebin" class="btn p-0">
-          <GithubLogo/>
-        </a>
+        <GithubLogo/>
       </div>
     </div>
     <div id="editor"></div>
+    
+    <div class="actions">
+        <button @click="copySnippet">
+            <IconCopy/>
+        </button>
+    </div>
   </div>
 </template>
 
 <script setup>
+useHead({
+  title: process.env.APP_NAME
+})
+
 import { onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
 import ace from 'ace-builds';
@@ -43,4 +51,11 @@ onMounted(async () => {
     console.error('Error fetching data:', error);
   }
 });
+
+const copySnippet = () => {
+  const snippet = editor.value.getValue();
+  navigator.clipboard.writeText(snippet);
+
+  alert('Copied to clipboard!');
+}
 </script>

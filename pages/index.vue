@@ -8,9 +8,7 @@
         </button>
       </div>
       <div class="right">
-        <a href="https://github.com/willyarisky/paste" target="_blank" alt="Open Source Pastebin" class="btn p-0">
-          <GithubLogo/>
-        </a>
+        <GithubLogo/>
       </div>
     </div>
     <div id="editor"></div>
@@ -18,6 +16,10 @@
 </template>
 
 <script setup>
+useHead({
+  title: process.env.APP_NAME
+})
+
 import { ref, onMounted } from 'vue';
 import ace from 'ace-builds';
 import 'ace-builds/src-noconflict/mode-javascript';

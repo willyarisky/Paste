@@ -59,3 +59,29 @@ body {
 
     }
 }
+
+.actions {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999;
+
+    button {
+        background: #a7e22e;
+        color: #2f3129;
+        border: none;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: ease-in-out 0.2s;
+
+        &:hover {
+            background: #92c825;
+            transition: ease-in-out 0.2s;
+        }
+    }
+}
