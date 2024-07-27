@@ -1,75 +1,63 @@
-# Nuxt 3 Minimal Starter
+# Paste.pt
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Deploy your Free Paste app with Vercel and Notion
 
-## Setup
+### Copy Notion Template
 
-Make sure to install the dependencies:
+1. **Access the Template**:
+   - Click on the following link to open the Notion template: [Notion Template](https://paste-pt.notion.site/6ec5ed3e60424373ab15d7a422caff41?v=4dd16f12cfc941f4b0c6a791c6391267&pvs=73).
 
-```bash
-# npm
-npm install
+2. **Duplicate the Template**:
+   - Once the template is open, locate the "Duplicate" button in the top-right corner.
+   - Click "Duplicate" to add the template to your own Notion workspace.
 
-# pnpm
-pnpm install
+3. **Go to Your Workspace**:
+   - Navigate to your Notion workspace where the duplicated template now resides.
+   - You should see the template in your sidebar under "Private" or in a specific workspace page.
 
-# yarn
-yarn install
 
-# bun
-bun install
-```
+### Generate Notion API Key for your Workspace
 
-## Development Server
+1. **Go to the Notion Integration Page**: 
+   - Visit [Notion Integrations](https://www.notion.so/my-integrations).
 
-Start the development server on `http://localhost:3000`:
+2. **Create a New Integration**:
+   - Click on the "New integration" button.
 
-```bash
-# npm
-npm run dev
+3. **Fill Out the Integration Details**:
+   - **Name**: Enter a name for your integration.
+   - **Associated Workspace**: Choose the workspace you want to integrate with.
+   - **Type**: Choose the "Internal" option to create an internal integration.
 
-# pnpm
-pnpm run dev
+4. **Submit and Save**:
+   - After filling out the details, click on "Submit".
+   - Once submitted, you'll be redirected to a page with your integration details.
 
-# yarn
-yarn dev
+5. **Copy the Internal API Key**:
+   - Locate the "Internal Integration Token" section.
+   - Click on the "Show" button to reveal the key.
+   - Copy the displayed internal API key to use in your application.
+   
+### Deploy on Vercel
 
-# bun
-bun run dev
-```
+Deploy your application easily on Vercel using the following button:
 
-## Production
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwillyarisky%2FPaste&env=APP_NAME,NOTION_SECRET_KEY,NOTION_DATABASE_ID&envDescription=Notion%20API%20Keys%20needed&project-name=paste-pt&repository-name=Paste.pt)
 
-Build the application for production:
+To proceed with the deployment:
 
-```bash
-# npm
-npm run build
+1. **Click the Button**: 
+   - Click the "Deploy with Vercel" button above to start the deployment process.
 
-# pnpm
-pnpm run build
+2. **Fill in Environment Variables**:
+   - In the Vercel deployment interface, you will be prompted to enter the required environment variables.
+   - Enter the following details:
+     - `APP_NAME=`: Your application's name.
+     - `NOTION_SECRET_KEY=`: The internal API key you generated for your Notion integration.
+     - `NOTION_DATABASE_ID=`: The ID of the Notion database you want to connect to.
 
-# yarn
-yarn build
+3. **Deploy**:
+   - After filling in the environment variables, click the "Deploy" button to deploy your application on Vercel.
 
-# bun
-bun run build
-```
+This will set up your application with the necessary Notion API keys and database connection, allowing you to utilize your Notion data within the deployed application.
 
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
