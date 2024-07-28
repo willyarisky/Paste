@@ -1,6 +1,5 @@
 import { Client } from "@notionhq/client";
 import { readBody } from 'h3';
-import { v4 as uuidv4 } from 'uuid';
 import { nanoid } from 'nanoid';
 
 export default defineEventHandler(async (event) => {
@@ -14,6 +13,8 @@ export default defineEventHandler(async (event) => {
   const notion = new Client({ auth: process.env.NOTION_SECRET_KEY });
 
   const insertData = async (data) => {
+    let groupId = null; // Define groupId here to ensure it's accessible in the catch block
+
     try {
       // Replace newline characters with <<N>>
       const processedContent = data.content.replace(/\n/g, '<<N>>');
@@ -21,7 +22,8 @@ export default defineEventHandler(async (event) => {
       const contentChunks = splitContent(processedContent, 2000);
       const richTextChunks = splitIntoRichTextChunks(contentChunks, 100);
 
-      const groupId = nanoid(12);
+      groupId = nanoid(12); // Assign the groupId here
+      let timestamp = new Date().getTime();
 
       for (const richTextChunk of richTextChunks) {
         const response = await notion.pages.create({
@@ -41,14 +43,13 @@ export default defineEventHandler(async (event) => {
               rich_text: richTextChunk,
             },
             "created_at": {
-              date: {
-                start: new Date().toISOString(),
-              },
+              number: timestamp,
             },
           },
         });
 
         console.log("Data inserted successfully:", response);
+        timestamp += 1; // Add 1 millisecond to the timestamp for each chunk
       }
       
       return {

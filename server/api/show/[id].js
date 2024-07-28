@@ -13,6 +13,12 @@ export default defineEventHandler(async (event) => {
             equals: groupId,
           },
         },
+        sorts: [
+          {
+            property: "created_at",
+            direction: "ascending",
+          },
+        ],
       });
 
       const pages = response.results;
