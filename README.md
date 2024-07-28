@@ -1,4 +1,5 @@
 # Paste.pt
+### Free Pastebin alternative
 
 Deploy your Free Paste app with Vercel and Notion
 
