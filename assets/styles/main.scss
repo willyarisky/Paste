@@ -60,6 +60,23 @@ body {
     }
 }
 
+@media (max-width: 820px) {
+    .toolbar {
+        top: auto;
+        bottom: 0;
+        border-bottom: none;
+        border-top: solid 1px #202020;
+    }
+
+    #editor {
+        margin-top: 0px;
+    }
+
+    .actions {
+        bottom: 50px !important;
+    }
+}
+
 .actions {
     position: fixed;
     right: 10px;
