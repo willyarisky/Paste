@@ -33,7 +33,11 @@ Deploy your Free Paste app with Vercel and Notion
    - Locate the "Internal Integration Token" section.
    - Click on the "Show" button to reveal the key.
    - Copy the displayed internal API key to use in your application.
-   
+  
+## Connect the Copied template to your Notion Integration
+
+Follow these steps on [Notion](https://www.notion.so/help/add-and-manage-connections-with-the-api).
+
 ### Deploy on Vercel
 
 Deploy your application easily on Vercel using the following button:
