@@ -1,4 +1,4 @@
-# Paste.pt
+# Paste.js.org
 ### Free Pastebin alternative
 
 Deploy your Free Paste app with Vercel and Notion
@@ -11,11 +11,6 @@ Deploy your Free Paste app with Vercel and Notion
 2. **Duplicate the Template**:
    - Once the template is open, locate the "Duplicate" button in the top-right corner.
    - Click "Duplicate" to add the template to your own Notion workspace.
-
-3. **Go to Your Workspace**:
-   - Navigate to your Notion workspace where the duplicated template now resides.
-   - You should see the template in your sidebar under "Private" or in a specific workspace page.
-
 
 ### Generate Notion API Key for your Workspace
 
