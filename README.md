@@ -34,7 +34,7 @@ Deploy your Free Paste app with Vercel and Notion
    - Click on the "Show" button to reveal the key.
    - Copy the displayed internal API key to use in your application.
   
-### Connect the Copied template to your Notion Integration
+### Connect the Copied Template to Your Notion Integration
 
 Follow these steps on [Notion](https://www.notion.so/help/add-and-manage-connections-with-the-api).
 
@@ -61,6 +61,12 @@ To proceed with the deployment:
 
 This will set up your application with the necessary Notion API keys and database connection, allowing you to utilize your Notion data within the deployed application.
 
+### License
 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-[Technical Support](https://buy.stripe.com/fZe6ru8AT9PefoAbII).
+### Technical Support
+
+For technical support, please visit [Technical Support](https://buy.stripe.com/fZe6ru8AT9PefoAbII).
+
+Note: This application is free and open-source. However, I do not provide customization services for the app. Please refer to the link above for any technical support.
