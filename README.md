@@ -6,7 +6,7 @@ Deploy your Free Paste app with Vercel and Notion
 ### Copy Notion Template
 
 1. **Access the Template**:
-   - Click on the following link to open the Notion template: [Notion Template](https://paste-pt.notion.site/6ec5ed3e60424373ab15d7a422caff41?v=4dd16f12cfc941f4b0c6a791c6391267&pvs=73).
+   - Click on the following link to open the Notion template: [Notion Template](https://pastejs.notion.site/6ec5ed3e60424373ab15d7a422caff41?v=4dd16f12cfc941f4b0c6a791c6391267&pvs=73).
 
 2. **Duplicate the Template**:
    - Once the template is open, locate the "Duplicate" button in the top-right corner.
