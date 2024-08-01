@@ -61,3 +61,6 @@ To proceed with the deployment:
 
 This will set up your application with the necessary Notion API keys and database connection, allowing you to utilize your Notion data within the deployed application.
 
+
+
+[Technical Support](https://buy.stripe.com/fZe6ru8AT9PefoAbII).
